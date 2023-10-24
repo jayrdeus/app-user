@@ -5,7 +5,6 @@ function LocationPin() {
   return <PersonPinCircleIcon />;
 }
 export default function Map({ user }) {
-    console.log(user,'mapcomp')
   const defaultMap = {
     center: [+user.address.geo.lat, +user.address.geo.lng ],
     zoom: 11,
@@ -13,7 +12,7 @@ export default function Map({ user }) {
   return (
     <div style={{ height: "400px", width: "100%" }}>
       <GoogleMap
-        bootstrapURLKeys={{ key: "AIzaSyC0sneO79rsRToj_N3YZ8YI8AZN4X2fhts" }}
+        bootstrapURLKeys={{ key: "place your api key" }}
         center={defaultMap.center}
         zoom={defaultMap.zoom}
         yesIWantToUseGoogleMapApiInternals
